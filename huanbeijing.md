@@ -1,3 +1,4 @@
+
 ###页面更换背景
 
 ![image](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/huanbeijing.gif "页面更换背景")
