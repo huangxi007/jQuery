@@ -3,7 +3,8 @@
 
 ---
 图片
-![image]
+![image](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/quanxuan.gif "全选与全不选")
+
 全选与全不选
 ```javascript
 $(function(){
