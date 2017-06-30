@@ -25,7 +25,6 @@ $(function(){
 		});
 	});
 ```
----
 ```html
 <input type="button" value="全选">
 	<input type="button" value="全不选">
