@@ -4,6 +4,7 @@
 ### 51 表单的应用
 
 ![文本框得到失去焦点](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/5/shiqujiaodian.gif)
+
 ```javascript
  $(function(){
 		$(":input").focus(function(){
@@ -18,7 +19,7 @@
              }
 		});
     })
-    ```
+```
 
 ![多行文本框高度变化](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/5/xiangshang.gif)
 
