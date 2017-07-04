@@ -38,7 +38,7 @@
     * 2.7.1 jQuery提供的选择器的扩展
     * 2.7.2 其他使用CSS选择器的方法
   * 2.8 小结
-* \[第 3 章 jQuery中的DOM操作\]
+* [\[第 3 章 jQuery中的DOM操作\]](di-3-zhang-jquery-zhong-de-dom-cao-4f5c5d.md)
   * 3.1 DOM操作的分类
   * 3.2 jQuery中的DOM操作
     * 3.2.1 查找节点
