@@ -1,5 +1,3 @@
-## 目录
-
 - [简介](README.md)
 - [目录](SUMMARY.md)
 - [ 第 1 章 认识jQuery](chapter1/chapter1.md)
