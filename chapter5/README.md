@@ -254,7 +254,7 @@ $(function(){
 ```
 ---
 
-![网页换肤](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/5/shiqujiaodian.gif)
+![网页换肤](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/5/xuanzeyanse.gif)
 ```javascript
 $(function(){
 			var $li =$("#skin li");
