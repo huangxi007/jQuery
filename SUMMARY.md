@@ -7,7 +7,7 @@
   - 1.1 JavaScript和JavaScript库
     - 1.1.1 JavaScript简介
     - 1.1.2 JavaScript库作用及对比
-  - [1.2 jQuery](chapter1/chapter1.md#12-jQuery)
+  - [1.2 jQuery](chapter1/chapter1.md#12-jquery)
     - 1.2.1 jQuery简介
     - 1.2.2 jQuery的优势
   - 1.3 jQuery代码的编写
