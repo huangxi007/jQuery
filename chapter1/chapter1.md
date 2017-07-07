@@ -47,7 +47,7 @@ jQuery，顾名思议，也就是JavaScript和查询（Query），即是辅助Ja
 1.1　JavaScript和JavaScript库  
 1.1.1 JavaScript简介  
 1.1.2 JavaScript库作用及对比    
-## 1.2 加入jQuery  
+## 1.2 jQuery  
 1.2.1 jQuery简介  
 1.2.2 jQuery的优势  
 1.3 jQuery代码的编写  
