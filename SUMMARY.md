@@ -7,7 +7,7 @@
   - 1.1 JavaScript和JavaScript库
     - 1.1.1 JavaScript简介
     - 1.1.2 JavaScript库作用及对比
-  - [1.2 认识jQuery](chapter1/chapter1.md#12-认识jquery)
+  - [1.2 jQuery](chapter1/chapter1.md#12-jquery)
     - 1.2.1 jQuery简介
     - 1.2.2 jQuery的优势
   - 1.3 jQuery代码的编写
@@ -18,7 +18,7 @@
   - 1.4 jQuery对象和DOM对象
     - 1.4.1 DOM对象和jQuery对象简介
     - 1.4.2 jQurey对象和DOM对象的相互转换
-    - 1.4.3 实例研究
+    - [1.4.3 shili](chapter1/chapter1.md##143-shili)
   - 1.5 解决jQuery和其他库的冲突
   - 1.6 jQuery开发工具和插件
   - 1.7 小结

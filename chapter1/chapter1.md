@@ -57,7 +57,7 @@ jQuery，顾名思议，也就是JavaScript和查询（Query），即是辅助Ja
 1.4 jQuery对象和DOM对象
 1.4.1 DOM对象和jQuery对象简介
 1.4.2 jQurey对象和DOM对象的相互转换
-1.4.3 实例研究
+### 1.4.3 shili
 1.5 解决jQuery和其他库的冲突
 1.6 jQuery开发工具和插件
 1.7 小结
