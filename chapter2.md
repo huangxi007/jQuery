@@ -229,7 +229,7 @@ id 为 one, class 为 one 的 div <div class="mini">class 为 mini</div>
 然后用CSS对这些元素进行初始化大小和背景颜色的设置，CSS代码如卜_:
 33 ◄	
 
-^ jQueiY »»> »>	
+```style
 div,span,p { width:140px; height:140px; margin:5px; background:#aaa; border:#000 lpx solid; float:left; font-size:17px; font-family:Verdana;
 }
 div.mini { width:55px; height:55px; background-color: #aaa;
@@ -238,6 +238,7 @@ div.mini { width:55px; height:55px; background-color: #aaa;
 div.hide {
 display:none;
 }
+```
 根据以上HTML+CSS代码，可以生成图2-2所示的页面效果。
 Id 为 one,class 为
 one 的 dlv
@@ -844,7 +845,7 @@ $(M#forml :password").length;
 
 ## 23
 
-![baidu](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/2/50.jpg "百度logo")
+![baidu](https://raw.githubusercontent.com/qianjilou/jQuery/master/image根据以h HTML代码s/2/50.jpg "百度logo")
 
 ## 24  
 
