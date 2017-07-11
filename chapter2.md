@@ -16,13 +16,223 @@ GitBook allows you to organize your book into chapters, each chapter is stored i
 
 ## 24
 
----
 
+---
 ## 25
 
----
 
+---
 ## 26
+
+以K足兄W站h的一个品牌列表的展示效果，用户进入该页面时，品牌列表默认是精简 K示的（即不完整的品牌列表），如图2-5所示。
+用户可以单卅商品列表下方的“站示全部品牌”按钮来敁示全部的品牌。
+革击“敁示令部品牌”按钮的同时，列表会将推荐的品牌的名字高亮显示，按钮ift的文 字也换成了“精简M示品牌”，如图2-6所示。
+阁2-5品牌展示列表（粘简）	阁2-6品牌展示列表（全部)
+再次单击“粘简敁示品牌”按钮，即可问到图2-5所示的页面。
+为了实现这个例子，酋先耑要设计它的HTML结构。HTML代码如下:
+```html
+<div class="SubCategoryBox">
+<ul>
+<li><a href=n#">佳能</a><i> (30440) </i></li>
+<li><a hrref="#">索尼</a><i><27220) </i></li> <li><a href="#">三星</a><i> (20808) </i></li> <li><a href=n#">尼康</a><i>(17821) </i></li> <li><a href=n#">松下</a><i>(12289) </i></li> <li><a href="#">卡西欧</a><i> (8242) </i></li> <li><a href^T^ic/aXi〉（14894) </ix/li> <li><a href="#">柯达</a><i>(9520) </i></li>
+<li><a href="#n>宾得</a><i>(2195) </i></li>
+<li><a href="#">理光</a><i>(4114} </i></li>
+<li><a href="#">奥林巴斯</a><i>(12205> </i></li> <li><a href ="#">明基</a><i> <1466》</i></li>
+<li><a href="#">爱国者</a><i> (3091) </i></li> <li><a href="#">其他品牌相机</a><i> (7275) </i></li>
+</ul>
+<div class=Hshowmoren>
+<a href="more.ht:ml"><span>显示全部品牌</span></a>
+</div>
+</div>
+```
+然后为上面的HTML代码添加CSS样式
+页面初始化的效果如图2-7所示。
+接下来为这个页面添加一些交互效果，
+要做的工作有以下儿项。
+2.从第7条开始隐藏后面的品牌（最
+后一条“其它品牌相机”除外）。
+3.当用户单击“显示伞部品牌”按钮
+时，将执行以下操作。
+1.跶示隐藏的品牌。
+2.“显示全部品牌”按钮文本切换成“粘•简显示品牌”。
+3.高亮推荐品牌。
+4.当用户单击“精简敁示品牌”按钮时，将执行以下操作。
+(1)从第5条开始隐藏后面的品牌（最后一条“其它品牌相机”除外)。
+(2)“精简显示品牌”按钮文本切换成“显示全部品牌”。
+(3)去掉高亮显示的推荐品牌。
+5.循环进行第（2)步和第（3)步。
+下面逐步来完成以上的效果。
+(1 )从第5条开始隐藏后面的品牌（圾后一条“其他品牌相机”除外）。
+
+(ilfe 〇〇^«»
+ami) a_> ISA mi)
+爱撕"
+07330) WF 02369) ft 达
+S 林 Gfl /MOW
+^AWm.(n?s>
+0B示全
+图2-7品牌展示列表（褚简）
+三S
+卡西
+^0469)
+
+```javascript
+var ^category = S('ul li:gt(5):not(:last)1);
+Scategory.hide () ;	//隐藏上面获取到的jQuery对象
+```
+SOI li:gt(5):nm(:last)')的意思是先获取<11丨>元素下索引值大丁• 5的<丨丨>元素的集合元素，
+然后去掉集合元素中的最后一个元素。这样，即可将从第7条开始至倒数第2条的所有品牌
+都获取到。
+最后通过hide〇方法隐藏这些元素。
+1.当用户单击“敁示全部品牌”按钮时，执行以下操作。
+首先获取到按钮，代码如下
+```
+var StoggleBtn = $('div.showmore > a1)；	//获取“显示全部品牌”按钮
+```
+然后给按钮添加珙件，使用show()方法把隐藏的品牌列表M示出来，代码如下：
+```
+StoggleBtn.click(function (){
+Scategory.show();
+return false;
+})；
+```
+由T给超链接添加one丨ick祺件，因此需要使用“etum false”语句让浏览器认为用户没
+有单击该超链接，从而阻止该超链接跳转。
+之后，需要将“显示伞部品牌”按钮文本切换成“精简显示品牌”，代码如下：
+```
+S{'.showmore a span1)
+css("background’、"url(img/up.gif) no-repeat 0 0")
+text ("精简显示品牌;	//这里使用了链式操作
+```
+这里完成了两步操作，即把按钮的背景图片换成向上的阁片，同时也改变了按钮文本内
+容，将其替换成“粘:简显示品牌”。
+接下来耑要高亮推荐品牌，代码如下：
+```
+S (’ul li ’ > • filter (’’ ：contains (丨佳能 ’ >,:contains 尼康’ > ^contains (•奥林巴
+斯，> ">
+• addClass ("promoted");;	//添加高亮样式
+```
+使用filM)方法筛选出符合要求的品牌，然后为它们添加promoted样式。在这里推荐了
+3个品，即牌佳能、尼谈和奥林巴斯。
+此时，完成的jQuery代码如下：
+```
+$(function () {	//等待DOM加载完毕
+var Scategory = $('ul li:gt (51) :not (:last) 1);
+//获得索引值大于5的品牌集集合对象（除最后一条）
+//显示全部品牌 //超链接不跳转
+Scategory.hide ();	//隐藏上面获取到的jQuery对象
+var StoggleBtn = $ ('div, showmore > a1)；	//获取“显示全部品牌”按钮
+StoggleBtn.click(function(){
+Scategory.show ();	//显示^category
+$(1 .showmore a span”
+.css ("background", Murl (img/up.gif) no-repeat 0 0,r)
+.text r精简显示品牌"）；	"改变背景图片和文本
+$ (1 ul lifilter (" :contains (1 佳能:contains 尼康 1) , :contains (* 奥林巴斯'> n)
+.addClass ("promoted11);	//添加高亮样式
+return	false;	//超链接不跳转
+})
+})
+```
+运行上面的代码，单击“敁示全部品牌”按钮后，显示图2-8所示的效果，此时已经能 够正常敁示全部品牌了。
+卫*1^鸿中用到尚九个jQuery方洼葯意恿如卞。
+(1)show():显示隐藏的匹配元素。
+(2)css(name，value):给元素设置样式.
+^注意	■ text(string):设置所有匹配元素的文本内容.
+(3)fiUer(Cxpr):筛选出与指定表达式匹配的元素集合，其中expr可以是多个选择器
+的组合.
+	■ addClass(class): 为匹配的元素添加指定的类名。	
+2.当用户单击“精简显示品牌”按钮时，将执行以下操作。
+由丁户单市的足同一个按钮，因此車件仍然是在刚才的按钮元素上。要将切换两种状
+态的效果在一个按钮上进行，可以通过判断元素的显示或者隐藏来达到U的，代码结构如下:
+if《元素显示> {
+//元素隐藏①
+}else{ •
+//元素显示②
+► 56
+
+jQuery选择器
+		—_				
+代码②就足第（2)步的内容，接下来只需要完成代码①的内容即可。
+在jQuery中，与show()方法相反的适hide()方法，因此可以使用hide()方法将品牌隐藏 起来，代码如卜‘：
+Scategory.hide () ;	//隐藏Scategory
+然后将“精简显示品牌”按钮文本切换成“显示全部品牌”，同时按钮图片换成向下的 图片，这一步与前面类似，只不过是阁片路径和文本内容不N而已，代码如下：
+S('.showmore a span')
+.css("background","url(img/down.gif) no-repeat 0 0")
+.text (”显示全部品牌//改变背景图片和文本
+接下来耑要去掉所柯品牌的高亮显示状态，此时可以使用removeClassO方法来完成，代 码如下：
+S(Tul li') .removeClass ("promoted");	//去掉高亮样式
+它将去掉所有<1>元素上的“promoted”样式，即去掉了品牌的高亮状态。
+removeClass(c丨ass)的功能和 addClass(class)的功能正好相反 e addClass(class)的功 ^注意能是为匹配的元‘添加指定的类，而removeCiass(class)则是从匹配的元素中删除
+魅的^	—	 __		
+至此完成代码①。
+扱后通过判断元素足否显示来分别执行代码①和代码②，代码如下：
+if (^category判断.is (" :visible"M {	//如果元素显示，则执行对应的代码
+之后即可将代码①和代码②插入相应的位置。jQuery代码如下：
+if (Scategory. is : visible") > {	//如果元素显示
+Scategory .hide () ;	//隐藏Scategory
+$ {'.showmore a span1)
+•css("background","url(img/down.gif> no-repeat 0 0")
+.text ("显示全部品牌//改变背景图片和文本 'ul li1 > .removeClass ("promoted1') ;//去掉高亮样式
+}else{
+Scategory. show () ;	//显示$category
+$('.showmore a span*)
+.css("background","url(img/up.gif) no-repeat 0 0")
+.text ("精简显示品牌//改变背景图片和文本 $<’ ul li 1 )• filter (" :contains ('佳能：contains (*尼康 ’），：contains (*
+57 ◄
+
+^ jQuer/ »»> »>	
+奥林巴斯*)")
+• addClass ("promoted");	//添加髙亮样式
+}
+至此任务完成，完整的jQuery代码如下：
+$ (function {	//等待 DOM 加载完毕.
+var Scategory = $('ul li:gt(5):not{:last)1);
+//获得索引值大于5的品牌集合对象（除最后一条> Scategory .hide ();	//隐藏上面获取到的jQuery对象
+var StoggleBtn = $(’div.showmore > a’>; //获取“显示全部品牌”按纽 StoggleBtn.click(function(> {	//给按钮添加 onclick 事件
+if (Scategory.is (" :visible")){//如果元素显示 Scategory. hide ();	//隐藏Scategory
+$'(.showmore a span1)
+.css("background","url(img/down.gif)norepeat 0 0")
+.text("显示全部品牌"）；//改变背景图片和文本 $ (1 ul li ’）• removeClass 丨promoted">; //去掉高亮样式
+}else{
+repeat 0 0")
+尼康M , :contains (*奥林巴斯1 > "
+}
+return false
+})
+})
+运行代码后，单击按钮，品牌列表会在“全部”和“精简”两种效果之间循环切换，显
+示效果如图2-9和图2-10所示。
+Scategory.show() ;	//显示Scategory
+$(' .showmore a span”
+•css("background”，"url(img/up.gif>no-
+.text <"精简显示品牌">;//改变背景图片和文本 $( *ul li •>. filter <■’ ：contains (1佳能	:contains ( !
+• addClass ("promoted”）；//添加高亮样式 //超链接不跳转
+► 58
+
+«< <<<<<第j章jQuery选择器
+fIR 〇〇44〇>	^ 〇722〇)	三5 oceoe)
+ami)	wp 〇2289)	卡西 k 败切
+算它岛嫌相机<7?W
+@5示全部品牌
+阁2-9粘简模式
+阁2-丨0全部模式
+在jQuery屮有一个方法更适合上面的情况，它能给一个按钮添加一组交互琪件，而不需 要像丨:例一样去判断，上例的代码如下：
+toggleBtn.click(function (){
+if (Scategory. is (" : visible")) {	//如果元素显示
+//元素隐藏	代码①
+}else{
+//元素显示	代码@	•
+)
+})
+如采改成togglc()方法，代码则可以直接写成以下形式：
+StoggleBtn. toggle (function () {	//toggle ()方法用来交替一组动作
+//显示元素	代码③
+},function(){
+//隐藏元素	代码④
+})
+当单击按钮后，脚本会对代码③和代码④进行交替处理。
+jQuery还提供了很多简单易用的方法，上面讲解的toggleO方法只是其中的一种，这些 方法将在后面的章节屮进行详细介绍。
+—垚本例中7如東角户禁用了 JavaScripr的功能，品牌列表仍叙函¥完"¥1示，-用户 单击“显示全部品牌”按钮的时候，会跳转到more.html页面来显示品牌列表•作为 ^注意一名专业的开发者，必须要考虑到禁用或者不支持JavaScript的浏览器（用户代理）• 另外，这点对于搜索引擎优化也特别有帮助，毕竟当前的搜索引擎爬虫基本都不支 持 JavaScript.
 
 ---
 
