@@ -4,10 +4,35 @@ GitBook allows you to organize your book into chapters, each chapter is stored i
 
 ## 21
 
-
+---
 
 ## 22
 
+---
+
+## 23
+
+---
+
+## 24
+
+---
+
+## 25
+
+---
+
+## 26
+
+---
+
+## 27
+
+---
+
+## 28
+
+---
 
 选抒器足jQuery的根接，在jQuery中，对事件处理、遍历DOM和Ajax操作都依 赖于选杼器。如采能熟练地使用选杼器，不仅能简化代码，而且可以达到事半功倍的 效果。
 
