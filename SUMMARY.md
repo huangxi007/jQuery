@@ -25,7 +25,7 @@
   - [3.1 DOM操作的分类](chapter3.md#31)
   - [3.2 jQuery中的DOM操作](chapter3.md#32)
 
- - [第 4 章 jQuery中的事件和动画](chapter4.md#40)
+- [第 4 章 jQuery中的事件和动画](chapter4.md#40)
   - [4.1 jQuery中的事件](chapter4.md#41)
   - [4.2 jQuery中的动画](chapter4.md#42)
   - [4.3 某视频网站视频展示效果实例](chapter4.md#43)
