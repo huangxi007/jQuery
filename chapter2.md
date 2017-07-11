@@ -4,10 +4,10 @@ GitBook allows you to organize your book into chapters, each chapter is stored i
 
 ## 21
 
-![baidu](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/2/25.jpg "百度logo")
+
 
 ## 22
-![baidu](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/2/26.jpg "百度logo")
+
 
 选抒器足jQuery的根接，在jQuery中，对事件处理、遍历DOM和Ajax操作都依 赖于选杼器。如采能熟练地使用选杼器，不仅能简化代码，而且可以达到事半功倍的 效果。
 
@@ -31,30 +31,30 @@ CSS适一项出色的技术，它使得网页的结构和表现样式完全分�
 
 http://www.w3.org/TR/CSS2/selector.html 网址。
 了解这些相关知识后，來#一个有关CSS类选择器的简单例子，代码如下：
-```style
+
 <p style=,'color: red; font-size: 30px; ">CSS Demo</p>
-```
+
 l：面代码的意思是将<p>元素里的文本颜色设背为红色，字体大小设置为30px。
 像L面这样把CSS代码和HTML代码混杂在一起的做法足非常不妥的，它并不符合表 现和内容相分离的设计原则，因此建议使用下面的方法，代码如下：
-```style
+
 .demo{	//给class为demo的元素添加样式
 color:red; font-size:30px;
 }
-```
-```
+
+
 <p class=ndemo">CSS Demo.</p>
-```
+
 
 先把样式写在<style>标签里，然后用class M性将元素和样式联系起來，class作为连接 样式和网页结构的纽带。这样的写法不仅容易理解和阅读，而且当需要改变一些样式的时 候，只要^<style>#签里改变相关的样式即可。
 例如耍使所有class为demo的<p>元素里的字体加粗，可以直接在<style>里编写，而不 需要去网页串.寻找所柯class为demo的<p>元素再逐个添加样式，代码如下：
-```style
+
 .demo{	//给class为demo的元素添加样式
 color:red; font-size:30px; font-weight: bold;	/ / 字体加粗
 )
-```
-```
+
+
 <p class=ndemo">CSS Demo.</p>
-```
+
 H 把CSS应用到网页中有3种方式，即行间样式表、内部样式表和外部样式表。
 
 先把样式写在<style>标签里，然后用class M性将元素和样式联系起來，class作为连接 样式和网页结构的纽带。这样的写法不仅容易理解和阅读，而且当需要改变一些样式的时 候，只要^<style>#签里改变相关的样式即可。
@@ -77,8 +77,7 @@ alert('JavaScript demo.');
 本段代码的作用足为<p>元素设贾一个onclick事件，当单击此元素吋，会弹出一个对话 框，显示效果如图2-1所示。
 像上面这样把JavaScript代码和HTML代码混杂在一起的做法同样也非常不妥，因为它 并没有将网页内容和行为分离，所以建议使用下面的方法，代码如下：
 
-»»> »>
-^ jQuer/
+
 <p class="demo">jQuery Demo</p>
 <script type="text/javascript">
 $ (" .demo") .click (function () {	//给 class 为 demo 的元素添加行为
@@ -529,7 +528,7 @@ kimxn \ Ura«〇0« M.tOt hoftm MM
 好 input 的 type MtiMMandiv
 E5S?F»M$r
 ipan 元 ft.
-► 40
+
 
 
 
