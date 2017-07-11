@@ -22,7 +22,7 @@
   - 1.6 jQuery开发工具和插件
   - 1.7 小结
 - [第 2 章  jQuery选择器](chapter2.md#20)
-  - [2.1 jQuery选择器是什么](chapter2.md#20)
+  - [2.1 jQuery选择器是什么](chapter2.md#21)
   - [2.2 jQuery选择器的优势](chapter2.md#22)
   - [2.3 jQuery选择器](chapter2.md#23)
     - 2.3.1 基本选择器

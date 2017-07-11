@@ -2,9 +2,11 @@
 # 20
 GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
 
-## 22
+## 21
 
 ![baidu](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/2/25.jpg "百度logo")
+
+## 22
 ![baidu](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/2/26.jpg "百度logo")
 
 ## 23
