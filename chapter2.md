@@ -33,20 +33,20 @@ GitBook allows you to organize your book into chapters, each chapter is stored i
 ```html
 <div class="SubCategoryBox">
 <ul>
-<li><a href=n#">佳能</a><i> (30440) </i></li>
-<li><a hrref="#">索尼</a><i><27220) </i></li>
-<li><a href="#">三星</a><i> (20808) </i></li>
-<li><a href=n#">尼康</a><i>(17821) </i></li>
-<li><a href=n#">松下</a><i>(12289) </i></li>
-<li><a href="#">卡西欧</a><i> (8242) </i></li>
-<li><a href^T^ic/aXi〉（14894) </ix/li>
-<li><a href="#">柯达</a><i>(9520) </i></li>
-<li><a href="#n>宾得</a><i>(2195) </i></li>
+<li><a href=n#">佳能</a><i>(30440)</i></li>
+<li><a hrref="#">索尼</a><i><27220)</i></li>
+<li><a href="#">三星</a><i>(20808)</i></li>
+<li><a href=n#">尼康</a><i>(17821)</i></li>
+<li><a href=n#">松下</a><i>(12289)</i></li>
+<li><a href="#">卡西欧</a><i>(8242)</i></li>
+<li><a href="#">富士</a>（14894)</i><li>
+<li><a href="#">柯达</a><i>(9520)</i></li>
+<li><a href="#n>宾得</a><i>(2195)</i></li>
 <li><a href="#">理光</a><i>(4114} </i></li>
 <li><a href="#">奥林巴斯</a><i>(12205>
-</i></li> <li><a href ="#">明基</a><i> <1466》</i></li>
-<li><a href="#">爱国者</a><i> (3091) </i>
-</li> <li><a href="#">其他品牌相机</a><i> (7275) </i></li>
+</i></li> <li><a href ="#">明基</a><i><1466》</i></li>
+<li><a href="#">爱国者</a><i> (3091)</i>
+</li> <li><a href="#">其他品牌相机</a><i>(7275) </i></li>
 </ul>
 <div class=Hshowmoren>
 <a href="more.ht:ml"><span>显示全部品牌</span></a>
@@ -158,7 +158,7 @@ if《元素显示> {
 //元素隐藏①
 }else{ •
 //元素显示②
-► 56
+
 
 jQuery选择器
 		—_				
@@ -176,6 +176,7 @@ removeClass(c丨ass)的功能和 addClass(class)的功能正好相反 e addClass
 魅的^	—	 __		
 至此完成代码①。
 扱后通过判断元素足否显示来分别执行代码①和代码②，代码如下：
+```javascript
 if (^category判断.is (" :visible"M {	//如果元素显示，则执行对应的代码
 之后即可将代码①和代码②插入相应的位置。jQuery代码如下：
 if (Scategory. is : visible") > {	//如果元素显示
@@ -188,13 +189,12 @@ Scategory. show () ;	//显示$category
 $('.showmore a span*)
 .css("background","url(img/up.gif) no-repeat 0 0")
 .text ("精简显示品牌//改变背景图片和文本 $<’ ul li 1 )• filter (" :contains ('佳能：contains (*尼康 ’），：contains (*
-57 ◄
-
-^ jQuer/ »»> »>	
 奥林巴斯*)")
 • addClass ("promoted");	//添加髙亮样式
 }
+```
 至此任务完成，完整的jQuery代码如下：
+```javascript
 $ (function {	//等待 DOM 加载完毕.
 var Scategory = $('ul li:gt(5):not{:last)1);
 //获得索引值大于5的品牌集合对象（除最后一条> Scategory .hide ();	//隐藏上面获取到的jQuery对象
@@ -210,6 +210,7 @@ repeat 0 0")
 return false
 })
 })
+```
 运行代码后，单击按钮，品牌列表会在“全部”和“精简”两种效果之间循环切换，显
 示效果如图2-9和图2-10所示。
 Scategory.show() ;	//显示Scategory
