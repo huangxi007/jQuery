@@ -4,7 +4,8 @@
 
 本书循序渐进地对jQuery的各种函数和方法调用进行了介绍，读者可以系统地掌握jQuery的DOM操作、事件监听和动画、表单操作、AJAX以及插件方面等知识点，并结合每个章节后面的案例演示进行练习，达到掌握核心知识点的目的。
 
-
+![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
+![baidu](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/1/1.1.jpg "百度logo")
 
 为使读者更好地进行开发实践，本书的最后一章将前7章讲解的知识点和效果进行了整合，打造出一个非常有个性的网站，并从案例研究、网站材料、网站结构、网站样式和网站脚本等方面指导读者参与到项目建设中来。
 
