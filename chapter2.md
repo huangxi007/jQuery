@@ -44,7 +44,7 @@ color:red; font-size:30px;
 ```
 <p class=ndemo">CSS Demo.</p>
 ```
-«< ««< 第j章jQuery选择器
+
 先把样式写在<style>标签里，然后用class M性将元素和样式联系起來，class作为连接 样式和网页结构的纽带。这样的写法不仅容易理解和阅读，而且当需要改变一些样式的时 候，只要^<style>#签里改变相关的样式即可。
 例如耍使所有class为demo的<p>元素里的字体加粗，可以直接在<style>里编写，而不 需要去网页串.寻找所柯class为demo的<p>元素再逐个添加样式，代码如下：
 ```style
@@ -95,14 +95,14 @@ jQuery选择器的写法与CSS选择器的写法十分相似，只不过两者�
 2.jQuery选择器的优势
 2.简洁的写法
 $()函数在很多JavaScript类俾中都被作为一个选择器函数来使用，在jQuery屮也不例外。 其屮，$("#1D")用来代替document.getE丨ementById〇函数，即通过1D获取元素；$(ntagName") 用来代替document.getElemcntsByTagName()函数，即通过标签名获収HTML兀素：其他选择 器的写法可以参见第2.3节。
-^ 28
 
-«<<<«<第^章jQuery选择器
+
+
 3.支持CSS彳到CSS3选择器
 jQuery选抒器支持CSS 1、CSS2的全部和CSS3的部分选择器，冋吋它也柯少％独有 的选杼器，因此对拥有一定CSS接础的开发人贝来说，学jQuery选择器楚件非常容易的 事，而对于没W接触过CSS技术的幵发人员来说，在学>J jQueiy选杼器的同时也可以帘捤 CSS选杼器的堪木规则。
 使用CSS选杼器时，开发人员需要考虑主流浏览器足否支持某些选杼器。而在 jQuery中，幵发人员则可以放心地使用jQuery选择器而无耑考虑浏览器是否支持这些 选择器。
 为了能有更快的选择器解析速度，从1.1.3.1版以后，jQuery废弃了不常使用的XPath ^	选择器，但在引用相关插件后，依然可以支持XPath选择器（详见第2.7.1小节）.
-賺	—•	I	11	■ i» »»»•		 ■_	I	-»	..	-».«»»».	•	»-	.—»	-»■■■	.....	—	 							 •,	.	_	.	_	._		 ….
+
 4.完善的处理机制
 使用jQucry选杼器不仅比使用传统的getElementById〇和getElementsByTagName()函数 简洁得多，而ii还能避免臬些错误。C K面这个例子，代码如下：
 <div>test</div>
@@ -119,7 +119,7 @@ document.getElementByld("tt").style.color="red";
 这样就可以避免浏览器报错，但如果要操作的元素很多，可能对每个元素都要进行 一次判断，大苋奴的工作会使幵发人员感到厌倦，而jQuery在这方面问题上的处理足 非常不错的，即使川jQuery获取网页中不存在的元素也不会报错，釕下面的例子，代码 如下：
 <div>test</div>
 <script type="text/javascript">
-29 ◄
+
 
 vi： jQuer/ »»> »>	
 $(，#tt*) .css ("color", "red");	//这里无需判断$(• #tt1 >是否存在
@@ -147,9 +147,9 @@ HTML代码如下：
 ③给每个<p>元素添加行为牢件。
 JavaScript代码如下：
 var items = document.getElementsByTagName("p"); //获取网页中所有的 p 元素 for(var i=0;i < items.length;i++){ //由于获取的是数组对象，因此需要把它循环出来
-► 30
 
-	<« ««<第^章jQuery选择器
+
+
 items [i] .onclick = function (> {	//给每个对象添加 onclick 事件
 //doing something
 例子2:使…个特定的表格隔行变色。
@@ -169,9 +169,9 @@ var item = document. getElementByld ("tb") ;	//获取 id 为 tb 的元素（tabl
 var tbody = item.getElementsByTagName("tbody">[0]; //获取表格的第 1 个tbody元素 var trs = tbody.getElementsByTagName (ntrM) ； //获取 tbody 元素下的所有 tr 元素 for(var i=0;i < trs . length; i++) {	//循环 tr 元素
 if (i%2==0) {	//取模（取余数.例如 0%2==01 %2==1 2%2==0 3%2==1)
 trs[i].style.backgroundColor = "#888"; //改变符合条件的tr元素的背景色
-31 <
 
-jQuer^ »»> »>-
+
+
 例子3:对多选框进行操作，输出选中的多选框的个数。
 HTML代码如K:
 <input type='fcheckbox" value=n 1" name=f,check" checked/〉
@@ -198,11 +198,12 @@ alert ("选中的个数为：”+arrays.length )
 上而的儿个例子都是用传统的JavaScript方法进行操作，屮间使用了 getElernent Byld()、getElementsByTagNameO和 getElementsByName()等方法，然后动态地给元素添 加行为或者样式。这些虽然都是JavaScript中敁简单的操作，但不断重M使用 getElementById()和getElementsByTagName()等冗长而难记的名称，使越来越多的开发人 员开始厌倦这种枯燥的写法，并有时候为了获取N页屮的某个元素，需要编写很多的 getElementById()和 getElementsByTagName()方法。然而在 jQuery 屮，类似的这些操作 则是非常简洁。
 下面学>』如何使〗tj jQiiery获収这些元素。
 //获取id为btn的元素(button ) //给元素添加onclick事件 //创建一个数组对象
-► 32
 
-	«< ««<第^章jQuery选择器
+
+
 jQuery选抒器分为祛本选杼器、层次选杼器、过滤选杼器和表单选杼器。在下面的章节 中将分別用不同的选抒器来沓找HTML代码中的元素并对其进行简单的操作。为了能更涪 晰、直观地讲解选杼器，泣先耑要设计一个简单的页面，里面包含各种<(1^>元素和<span> 元素，然后使用jQuery选杼器来匹配元素并调整它们的样式。
 新违-个空闩页面，输入以下HTML代码：
+```html
 <div class="one" id-none" >
 id 为 one, class 为 one 的 div <div class="mini">class 为 mini</div>
 </div>
@@ -222,14 +223,15 @@ id 为 one, class 为 one 的 div <div class="mini">class 为 mini</div>
 </div>
 <div style="display:none; " class="none">style 的 display 为’’none"的 div </div>
 <div class="hide">class 为"hide"的 div</div>
+
 <div>
 包含 input 的 type 为"hidden"的 div<input type="hidden" size="8n/>
 </div>
 〈span id="mover">i在执行动画的 span 元素.〈/span〉
 然后用CSS对这些元素进行初始化大小和背景颜色的设置，CSS代码如卜_:
-33 ◄	
 
-^ jQueiY »»> »>	
+
+
 div,span,p { width:140px; height:140px; margin:5px; background:#aaa; border:#000 lpx solid; float:left; font-size:17px; font-family:Verdana;
 }
 div.mini { width:55px; height:55px; background-color: #aaa;
@@ -238,6 +240,7 @@ div.mini { width:55px; height:55px; background-color: #aaa;
 div.hide {
 display:none;
 }
+
 根据以上HTML+CSS代码，可以生成图2-2所示的页面效果。
 Id 为 one,class 为
 one 的 dlv
