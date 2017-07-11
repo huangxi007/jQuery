@@ -2,65 +2,34 @@
 
 - [简介](README.md)
 - [目录](SUMMARY.md)
-- [ 第 1 章 认识jQuery](chapter1/README.md)
-  - 1.1 JavaScript和JavaScript库
-    - 1.1.1 JavaScript简介
-    - 1.1.2 JavaScript库作用及对比
+- [ 第 1 章 认识jQuery](chapter1.md)
+  - [1.1 JavaScript和JavaScript库](chapter1.md#11)
   - [1.2 jQuery](chapter1.md#12-jquery)
-    - 1.2.1 jQuery简介
-    - 1.2.2 jQuery的优势
-  - 1.3 jQuery代码的编写
-    - 1.3.1 配置jQuery环境
-    - 1.3.2 编写简单的jQuery代码
-    - 1.3.3 jQuery代码风格
-    - 1.3.3 jQuery代码风格
-  - 1.4 jQuery对象和DOM对象
-    - 1.4.1 DOM对象和jQuery对象简介
-    - 1.4.2 jQurey对象和DOM对象的相互转换
-    - [1.4.3 shili](chapter1.md#143-shili)
-  - 1.5 解决jQuery和其他库的冲突
-  - 1.6 jQuery开发工具和插件
-  - 1.7 小结
+  - [1.3 jQuery代码的编写](chapter1.md#13)
+  - [1.4 jQuery对象和DOM对象](chapter1.md#14)
+  - [1.5 解决jQuery和其他库的冲突](chapter1.md#15)
+  - [1.6 jQuery开发工具和插件](chapter1.md#16)
+  - [1.7 小结](chapter1.md#17)
 
 - [第 2 章  jQuery选择器](chapter2.md#20)
   - [2.1 jQuery选择器是什么](chapter2.md#21)
   - [2.2 jQuery选择器的优势](chapter2.md#22)
   - [2.3 jQuery选择器](chapter2.md#23)
-    - 2.3.1 基本选择器
-    - 2.3.2 层次选择器
-    - 2.3.3 过滤选择器
-    - 2.3.4 表单选择器
   - [2.4 应用jQuery改写示例](chapter2.md#24)
   - [2.5 选择器中的一些注意事项](chapter2.md#25)
-    - 2.5.1 选择器中含有特殊符号的注意事项
-    - 2.5.2 选择器中含有空格的注意事项
   - [2.6 案例研究——某网站品牌列表的效果](chapter2.md#26)
   - [2.7 其他选择器](chapter2.md#27)
-    - 2.7.1 jQuery提供的选择器的扩展
-    - 2.7.2 其他使用CSS选择器的方法
-  - 2.8 小结
+  - [2.8 小结](chapter2.md#28)
 
 - [第 3 章 jQuery中的DOM操作](chapter3.md#30)
-  - 3.1 DOM操作的分类
-  - 3.2 jQuery中的DOM操作
-    - 3.2.1 查找节点
-    - 3.2.2 创建节点
-    - 3.2.3 插入节点
-    - 3.2.4 删除节点
-    - 3.2.5 复制节点
-    - 3.2.6 替换节点
-    - 3.2.7 包裹节点
-    - 3.2.8 属性操作
-    - 3.2.9 样式操作
-    - 3.2.10 设置和获取HTML、文本和值
-    - 3.2.11 遍历节点
-    - 3.2.12 CSS—DOM操作
+  - [3.1 DOM操作的分类](chapter3.md#31)
+  - [3.2 jQuery中的DOM操作](chapter3.md#32)
 
  - [第 4 章 jQuery中的事件和动画](chapter4.md#40)
-  - 4.1 jQuery中的事件
-  - 4.2  jQuery中的动画
-  - 4.3  某视频网站视频展示效果实例
-  - 4.4  小结
+  - [4.1 jQuery中的事件](chapter4.md#41)
+  - [4.2 jQuery中的动画](chapter4.md#42)
+  - [4.3 某视频网站视频展示效果实例](chapter4.md#43)
+  - [4.4 小结](chapter4.md#44)
   
 - [第 5 章 jQuery对表单、表格的操作及更多应用](chapter5.md#50)
   - [5.1  表单应用](chapter5.md#51)
@@ -68,24 +37,24 @@
   - [5.3  其它应用](chapter5.md#53)
   - [5.3  其它应用](chapter5.md#54)
   - [5.3  其它应用](chapter5.md#55)
-  - 5.4  小结
+  - [5.4  小结](chapter5.md#56)
   
 - [第 6 章 jQuery与Ajax的应用](chapter6.md#60)
-  - [6.1  Ajax的优势和不足]
-  - 6.2  Ajax的XMLHttpRequest对象
-  - 6.3  安装Web环境--AppServ
-  - 6.4  编写第一个Ajax例子
-  - [6.5  jQuery中的Ajax]
-  - 6.6  序列化元素
-  - 6.7  jQuery中的Ajax全局事件
-  - [6.8  基于jQuery的AJAX聊天程序]
-  - 6.9  小结
+  - [6.1  Ajax的优势和不足](chapter6.md#61)
+  - [6.2  Ajax的XMLHttpRequest对象](chapter6.md#61)
+  - [6.3  安装Web环境--AppServ](chapter6.md#61)
+  - [6.4  编写第一个Ajax例子](chapter6.md#61)
+  - [6.5  jQuery中的Ajax](chapter6.md#61)
+  - [6.6  序列化元素](chapter6.md#61)
+  - [6.7  jQuery中的Ajax全局事件](chapter6.md#61)
+  - [6.8  基于jQuery的AJAX聊天程序](chapter6.md#61)
+  - [6.9  小结](chapter6.md#61)
   
-- [第 7 章 插件的使用和写法]
-  - [7.1  jQuery表单验证插件--Validation]
-  - [7.2  jQuery表单插件--Form]
-  - [7.3  动态绑定事件插件--livequery]
-  - [7.4  jQuery UI插件]
-  - [7.5  管理cookie的插件--cookie]
-  - [7.6  编写jQuery插件]
-  - 7.7  小结
+- [第 7 章 插件的使用和写法](chapter7.md#70)
+  - [7.1  jQuery表单验证插件--Validation](chapter7.md#71)
+  - [7.2  jQuery表单插件--Form](chapter7.md#72)
+  - [7.3  动态绑定事件插件--livequery](chapter7.md#73)
+  - [7.4  jQuery UI插件](chapter7.md#74)
+  - [7.5  管理cookie的插件--cookie](chapter7.md#75)
+  - [7.6  编写jQuery插件](chapter7.md#76)
+  - [7.7  小结](chapter7.md#77)
