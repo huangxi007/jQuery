@@ -1,11 +1,11 @@
-###全选与全不选
+### 全选与全不选
 
 
 ---
 图片
 ![image](https://raw.githubusercontent.com/qianjilou/jQuery/master/images/quanxuan.gif "全选与全不选")
 
-###全选与全不选
+### 全选与全不选
 ```javascript
 $(function(){
 		$("input:eq(0)").click(function(){
