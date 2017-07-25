@@ -40,7 +40,11 @@
   - [5.6  日历](chapter5.md#56)
   - [5.7  计时器](chapter5.md#57)
   - [5.8  选项卡](chapter5.md#58)
-  - [5.8  换一波](chapter5.md#58)
+  - [5.9  换一波](chapter5.md#58)
+  - [5.10  精灵技术](chapter5.md#58)
+  - [5.11  手动风琴](chapter5.md#58)
+  - [5.12  仿淘宝筛选](chapter5.md#58)
+  - [5.13  换背景](chapter5.md#58)
   - [5.9  小结](chapter5.md#56)
   
 - [第 6 章 jQuery与Ajax的应用](chapter6.md#60)
